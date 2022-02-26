@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+        <link rel="stylesheet" href="qrcode.css">
+    </head>
+    <body>
+        <div id="links">
+            <input placeholder="Copy link here" type="text" id="link" name="link">
+        </div>
+        <div id="codes">
+            <button onclick="generator()">Generate QR Code</button>
+            <div id="qrcode"></div>
+        </div>
+        <div id="buttons">
+            <button id="download" onclick="download()">Download</button>
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+
+        <script src="qrcode.js"></script>
+    </body>
+</html>
